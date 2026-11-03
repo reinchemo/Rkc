@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f8fafc">
+    <meta name="description" content="Reinhard — web developer, digital creator, coding tutor and designer.">
+    <title>Reinhard | Web Developer & Digital Creator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="wrap">
+            <!-- Live Animated Logo -->
+            <a class="logo" href="#home">
+                <svg class="live-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L93 25 L93 75 L50 95 L7 75 L7 25 Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
+                    <path d="M35 30 V70 M35 30 H55 C65 30 65 50 55 50 H35 M50 50 L65 70" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> Reinhard
+                <span>.</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+                <svg class="icon-menu" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+                <svg class="icon-close" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#systems">Systems</a>
+                <a href="#teach">Teaching</a>
+                <a href="#posters">Posters</a>
+                <a class="btn p" href="#contact">Book a project</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="home">
+        <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="grid-bg" aria-hidden="true"></div>
+
+        <div class="wrap">
+            <div class="hero-content">
+                <span class="hello h-in" style="--d:0"><span class="dot"></span>Available for new projects</span>
+
+                <h1 class="split" aria-label="Websites for businesses that grow.">
+                    <span class="w" style="--i:0">Websites</span>
+                    <span class="w" style="--i:1">for</span>
+                    <span class="w" style="--i:2">businesses</span>
+                    <span class="w" style="--i:3">that</span>
+                    <span class="w gradient-text" style="--i:4">grow.</span>
+                </h1>
+
+                <p class="lead h-in" style="--d:6">I build fast, responsive websites and digital systems. From teaching kids to code to designing posters, I handle the whole job.</p>
+
+                <div class="cta h-in" style="--d:7">
+                    <a class="btn p glow-btn" href="#contact">Start your project</a>
+                    <a class="btn o" href="#systems">See my work</a>
+                </div>
+            </div>
+
+            <!-- Hero Graphics -->
+            <div class="hero-graphics" aria-hidden="true">
+                <!-- Decorative background -->
+                <div class="hero-bg-deco"></div>
+
+                <!-- Card 1: Code Window -->
+                <div class="hero-card code-card">
+                    <div class="bar"><span></span><span></span><span></span><code>developer.js</code></div>
+                    <div class="code-block">
+                        <div class="line"><span class="kw">const</span> <span class="var">developer</span> = {</div>
+                        <div class="line indent"><span class="prop">name</span>: <span class="str">'Reinhard'</span>,</div>
+                        <div class="line indent"><span class="prop">role</span>: <span class="str">'Full-Stack Dev'</span>,</div>
+                        <div class="line indent"><span class="prop">skills</span>: [<span class="str">'React'</span>, <span class="str">'Node'</span>],</div>
+                        <div class="line indent"><span class="prop">focus</span>: <span class="str">'Building systems'</span></div>
+                        <div class="line">};<span class="cursor">|</span></div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Tech Stack -->
+                <div class="hero-card tech-card">
+                    <div class="tech-header">
+                        <span class="tech-icon">⚡</span>
+                        <h4>Core Stack</h4>
+                    </div>
+
+                    <div class="tech-skills">
+                        <div class="ts-item">
+                            <div class="ts-info"><span>Frontend</span><strong>95%</strong></div>
+                            <div class="ts-bar">
+                                <div class="ts-fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="ts-item">
+                            <div class="ts-info"><span>Backend</span><strong>85%</strong></div>
+                            <div class="ts-bar">
+                                <div class="ts-fill" style="width: 85%; animation-delay: 0.2s;"></div>
+                            </div>
+                        </div>
+                        <div class="ts-item">
+                            <div class="ts-info"><span>UI Design</span><strong>90%</strong></div>
+                            <div class="ts-bar">
+                                <div class="ts-fill" style="width: 90%; animation-delay: 0.4s;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="wrap">
+            <div class="about-grid rv">
+
+                <!-- Left Column: Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-img-wrapper">
+                        <!-- Make sure 'my-photo.jpg' is in your folder, or change the name here -->
+                        <img src="my-photo.jpg" alt="Reinhard" class="profile-img">
+                        <div class="status-badge">
+                            <span class="status-dot"></span> Available
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Reinhard</h3>
+                        <p>Full-Stack Developer</p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Bio & Services -->
+                <div class="about-content">
+                    <h2 class="glow-heading">Developer, designer and teacher.</h2>
+
+                    <div class="bio-text">
+                        <p>I’m a full-stack developer who builds websites, slide decks and posters. I like work that people actually use, so I design around the person on the other side of the screen first and write the code second.</p>
+                        <p>Between projects I research new tech and tutor beginners in coding. I’m proud to build my career in one of Africa’s fastest-growing tech scenes.</p>
+                    </div>
+
+                    <!-- Services moved here to fill the space beautifully -->
+                    <div class="services-badges">
+                        <h4>What I Do</h4>
+                        <div class="badges-grid">
+                            <div class="badge-item">
+                                <span>💻</span> <span class="badge-text">Web Development</span>
+                            </div>
+                            <div class="badge-item">
+                                <span>🎨</span> <span class="badge-text">Graphic Design</span>
+                            </div>
+                            <div class="badge-item">
+                                <span>🎓</span> <span class="badge-text">Coding Tutor</span>
+                            </div>
+                            <div class="badge-item">
+                                <span>🚀</span> <span class="badge-text">Tech Consult</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Systems Section -->
+    <section id="systems" class="cr">
+        <div class="wrap">
+            <div class="center-header rv">
+                <span class="subtitle">Web development</span>
+                <h2 class="glow-heading">Systems I have built</h2>
+                <p>Click a tab to instantly preview live, custom web applications and systems.</p>
+            </div>
+
+            <div class="snake-border-wrapper rv">
+                <div class="interactive-showcase">
+                    <div class="showcase-tabs">
+                        <button class="tab-btn active" data-target="proj-1" style="--tab-color: #0f172a;">Starlink</button>
+                        <button class="tab-btn" data-target="proj-2" style="--tab-color: #059669;">Hope Lifting</button>
+                        <button class="tab-btn" data-target="proj-3" style="--tab-color: #1e3a8a;">Maxis Security</button>
+                        <button class="tab-btn" data-target="proj-4" style="--tab-color: #84cc16;">MA'ALIT</button>
+                        <button class="tab-btn" data-target="proj-5" style="--tab-color: #ec4899;">Perfume</button>
+                        <button class="tab-btn" data-target="proj-6" style="--tab-color: #475569;">Investors Lake</button>
+                    </div>
+
+                    <div class="showcase-display">
+                        <div class="showcase-panel active" id="proj-1">
+                            <div class="sp-image" style="background:linear-gradient(135deg,#0f172a,#334155);">
+                                <span class="sp-icon">🚀</span>
+                            </div>
+                            <div class="sp-content">
+                                <h3>Starlink Ultranet</h3>
+                                <p>Fast, reliable internet landing page with plan selection and interactive features.</p>
+                                <a href="https://star-black-alpha.vercel.app/" target="_blank" class="btn p">Visit Live Site ↗</a>
+                            </div>
+                        </div>
+
+                        <div class="showcase-panel" id="proj-2">
+                            <div class="sp-image" style="background:linear-gradient(135deg,#059669,#064e3b);">
+                                <span class="sp-icon">🌱</span>
+                            </div>
+                            <div class="sp-content">
+                                <h3>Hope Lifting</h3>
+                                <p>A community-focused platform designed to uplift and support local initiatives.</p>
+                                <a href="https://hopelifting.co.ke/" target="_blank" class="btn p">Visit Live Site ↗</a>
+                            </div>
+                        </div>
+
+                        <div class="showcase-panel" id="proj-3">
+                            <div class="sp-image" style="background:linear-gradient(135deg,#1e3a8a,#0f1f5c);">
+                                <span class="sp-icon">🛡️</span>
+                            </div>
+                            <div class="sp-content">
+                                <h3>Maxis Security</h3>
+                                <p>Professional security services website for businesses, construction sites, and events.</p>
+                                <a href="https://reinchemo.github.io/security/" target="_blank" class="btn p">Visit Live Site ↗</a>
+                            </div>
+                        </div>
+
+                        <div class="showcase-panel" id="proj-4">
+                            <div class="sp-image" style="background:linear-gradient(135deg,#84cc16,#4d7c0f);">
+                                <span class="sp-icon">🏗️</span>
+                            </div>
+                            <div class="sp-content">
+                                <h3>MA’ALIT Works Ltd</h3>
+                                <p>A Kenyan contractor specializing in waterproofing, damp proofing and building repairs.</p>
+                                <a href="https://reinchemo.github.io/MA-ALIT/" target="_blank" class="btn p">Visit Live Site ↗</a>
+                            </div>
+                        </div>
+
+                        <div class="showcase-panel" id="proj-5">
+                            <div class="sp-image" style="background:linear-gradient(135deg,#ec4899,#be185d);">
+                                <span class="sp-icon">✨</span>
+                            </div>
+                            <div class="sp-content">
+                                <h3>Glowing Perfume</h3>
+                                <p>A sleek, modern e-commerce experience for luxury fragrances.</p>
+                                <a href="https://reinchemo.github.io/Glowing_perfume/" target="_blank" class="btn p">Visit Live Site ↗</a>
+                            </div>
+                        </div>
+
+                        <div class="showcase-panel" id="proj-6">
+                            <div class="sp-image" style="background:linear-gradient(135deg,#475569,#1e293b);">
+                                <span class="sp-icon">📊</span>
+                            </div>
+                            <div class="sp-content">
+                                <h3>Investors Lake</h3>
+                                <p>Secure financial dashboard. (Video preview coming soon).</p>
+                                <button class="btn o" style="cursor: not-allowed;" disabled>Private Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Teaching Video -->
+    <section id="teach">
+        <div class="wrap">
+            <div class="center-header rv">
+                <span class="subtitle">Coding tutor</span>
+                <h2 class="glow-heading">I teach children how to code</h2>
+                <p>Watch how I break complex programming ideas into fun, easy lessons for young minds.</p>
+            </div>
+
+            <div class="snake-border-wrapper rv" style="max-width: 960px; margin: 0 auto;">
+                <div class="video-container-inner">
+                    <div class="floating-badge">Live Class 🎓</div>
+                    <video controls poster="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1200&q=80">
+                        <source src="your-teaching-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Posters -->
+    <section id="posters" class="cr">
+        <div class="wrap">
+            <div class="center-header rv">
+                <span class="subtitle">Graphic design</span>
+                <h2 class="glow-heading">Posters & visual assets</h2>
+                <p>Clean, impactful designs that communicate your message clearly.</p>
+            </div>
+
+            <div class="poster-grid rv">
+                <div class="poster-item">
+                    <!-- REPLACE SRC WITH YOUR IMAGE -->
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="Poster 1">
+                    <div class="poster-overlay">View design ↗</div>
+                </div>
+                <div class="poster-item">
+                    <!-- REPLACE SRC WITH YOUR IMAGE -->
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" alt="Poster 2">
+                    <div class="poster-overlay">View design ↗</div>
+                </div>
+                <div class="poster-item">
+                    <!-- REPLACE SRC WITH YOUR IMAGE -->
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=600&q=80" alt="Poster 3">
+                    <div class="poster-overlay">View design ↗</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-glow"></div>
+        <div class="wrap footer-content">
+            <div class="footer-cta rv">
+                <h2>Ready to take your brand online?</h2>
+                <p>Book your first project now and get 10% off. Tell me what you need and I’ll reply with a plan.</p>
+                <a class="btn p glow-btn" href="mailto:hello@reinhard.com">Book a project now</a>
+            </div>
+            <div class="footer-links">
+                <div class="f-col">
+                    <h4>Reinhard.</h4>
+                    <p class="justified-text-footer">Building digital systems that grow businesses. Modern, fast and reliable.</p>
+                </div>
+                <div class="f-col">
+                    <h4>Navigate</h4>
+                    <a href="#about">About</a>
+                    <a href="#systems">Systems</a>
+                    <a href="#teach">Teaching</a>
+                    <a href="#posters">Posters</a>
+                </div>
+                <div class="f-col">
+                    <h4>Connect</h4>
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="tel:+1234567890">+123-456-7890</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Reinhard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span>WhatsApp me</span>
+    </a>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

@@ -15,7 +15,6 @@
 
     <nav>
         <div class="wrap">
-            <!-- Live Animated Logo -->
             <a class="logo" href="#home">
                 <svg class="live-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M50 5 L93 25 L93 75 L50 95 L7 75 L7 25 Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
@@ -32,7 +31,8 @@
                 <a href="#systems">Systems</a>
                 <a href="#teach">Teaching</a>
                 <a href="#posters">Posters</a>
-                <a class="btn p" href="#contact">Book a project</a>
+                <!-- UPDATED TO WHATSAPP -->
+                <a class="btn p" href="https://wa.me/254759592457" target="_blank">Hire me</a>
             </div>
         </div>
     </nav>
@@ -44,8 +44,7 @@
 
         <div class="wrap">
             <div class="hero-content">
-                <span class="hello h-in" style="--d:0"><span class="dot"></span>Available for new projects</span>
-
+                <span class="hello h-in" style="--d:0"><span class="dot"></span>Available now for new projects</span>
                 <h1 class="split" aria-label="Websites for businesses that grow.">
                     <span class="w" style="--i:0">Websites</span>
                     <span class="w" style="--i:1">for</span>
@@ -53,20 +52,17 @@
                     <span class="w" style="--i:3">that</span>
                     <span class="w gradient-text" style="--i:4">grow.</span>
                 </h1>
-
-                <p class="lead h-in" style="--d:6">I build fast, responsive websites and digital systems. From teaching kids to code to designing posters, I handle the whole job.</p>
-
+                <p class="lead h-in" style="--d:6">I build fast, responsive websites and custom digital systems. From clean design to seamless functionality, I handle the entire web development process.</p>
                 <div class="cta h-in" style="--d:7">
-                    <a class="btn p glow-btn" href="#contact">Start your project</a>
+                    <!-- UPDATED TO WHATSAPP -->
+                    <a class="btn p glow-btn" href="https://wa.me/254759592457" target="_blank">Hire me</a>
                     <a class="btn o" href="#systems">See my work</a>
                 </div>
             </div>
 
             <!-- Hero Graphics -->
             <div class="hero-graphics" aria-hidden="true">
-                <!-- Decorative background -->
                 <div class="hero-bg-deco"></div>
-
                 <!-- Card 1: Code Window -->
                 <div class="hero-card code-card">
                     <div class="bar"><span></span><span></span><span></span><code>developer.js</code></div>
@@ -74,37 +70,26 @@
                         <div class="line"><span class="kw">const</span> <span class="var">developer</span> = {</div>
                         <div class="line indent"><span class="prop">name</span>: <span class="str">'Reinhard'</span>,</div>
                         <div class="line indent"><span class="prop">role</span>: <span class="str">'Full-Stack Dev'</span>,</div>
-                        <div class="line indent"><span class="prop">skills</span>: [<span class="str">'React'</span>, <span class="str">'Node'</span>],</div>
-                        <div class="line indent"><span class="prop">focus</span>: <span class="str">'Building systems'</span></div>
+                        <div class="line indent"><span class="prop">skills</span>: [<span class="str">'Website'</span>, <span class="str">'Graphic'</span>],</div>
+                        <div class="line indent"><span class="prop">focus</span>: <span class="str">'Building Systems'</span></div>
                         <div class="line">};<span class="cursor">|</span></div>
                     </div>
                 </div>
 
-                <!-- Card 2: Tech Stack -->
-                <div class="hero-card tech-card">
-                    <div class="tech-header">
-                        <span class="tech-icon">⚡</span>
-                        <h4>Core Stack</h4>
-                    </div>
-
-                    <div class="tech-skills">
-                        <div class="ts-item">
-                            <div class="ts-info"><span>Frontend</span><strong>95%</strong></div>
-                            <div class="ts-bar">
-                                <div class="ts-fill" style="width: 95%;"></div>
-                            </div>
+                <!-- Card 2: Video Reel -->
+                <div class="reel-wrapper">
+                    <div class="hero-card reel-card">
+                        <div class="reel-header">
+                            <div class="reel-dot"></div>
+                            <h4>My Productivity Space</h4>
                         </div>
-                        <div class="ts-item">
-                            <div class="ts-info"><span>Backend</span><strong>85%</strong></div>
-                            <div class="ts-bar">
-                                <div class="ts-fill" style="width: 85%; animation-delay: 0.2s;"></div>
-                            </div>
+                        <!-- Aspect ratio adjusted in CSS -->
+                        <div class="reel-screen">
+                            <video id="hero-reel-video" src="./videos/Video.mp4" autoplay loop muted playsinline class="reel-video"></video>
+                            <div class="reel-overlay"><span>PLAYING</span></div>
                         </div>
-                        <div class="ts-item">
-                            <div class="ts-info"><span>UI Design</span><strong>90%</strong></div>
-                            <div class="ts-bar">
-                                <div class="ts-fill" style="width: 90%; animation-delay: 0.4s;"></div>
-                            </div>
+                        <div class="reel-progress">
+                            <div class="reel-progress-bar" id="video-progress"></div>
                         </div>
                     </div>
                 </div>
@@ -116,15 +101,10 @@
     <section id="about">
         <div class="wrap">
             <div class="about-grid rv">
-
-                <!-- Left Column: Profile Card -->
                 <div class="profile-card">
                     <div class="profile-img-wrapper">
-                        <!-- Make sure 'my-photo.jpg' is in your folder, or change the name here -->
-                        <img src="my-photo.jpg" alt="Reinhard" class="profile-img">
-                        <div class="status-badge">
-                            <span class="status-dot"></span> Available
-                        </div>
+                        <img src="./images/rein no.png" alt="Reinhard" class="profile-img">
+                        <div class="status-badge"><span class="status-dot"></span> Available</div>
                     </div>
                     <div class="profile-info">
                         <h3>Reinhard</h3>
@@ -132,35 +112,56 @@
                     </div>
                 </div>
 
-                <!-- Right Column: Bio & Services -->
                 <div class="about-content">
                     <h2 class="glow-heading">Developer, designer and teacher.</h2>
-
                     <div class="bio-text">
-                        <p>I’m a full-stack developer who builds websites, slide decks and posters. I like work that people actually use, so I design around the person on the other side of the screen first and write the code second.</p>
-                        <p>Between projects I research new tech and tutor beginners in coding. I’m proud to build my career in one of Africa’s fastest-growing tech scenes.</p>
+                        <p>I’m a full-stack developer focused on building websites and digital systems that are actually easy to use.</p>
+                        <p>I always design with the user in mind first, and then write the code. I love researching new tech and helping beginners learn how to code.</p>
                     </div>
 
-                    <!-- Services moved here to fill the space beautifully -->
+                    <!-- Gradient Skill Cards -->
                     <div class="services-badges">
                         <h4>What I Do</h4>
                         <div class="badges-grid">
-                            <div class="badge-item">
-                                <span>💻</span> <span class="badge-text">Web Development</span>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrap">
+                                    <span class="skill-icon">💻</span>
+                                </div>
+                                <div class="skill-info">
+                                    <h5>Web Development</h5>
+                                    <p>Fast & responsive sites</p>
+                                </div>
                             </div>
-                            <div class="badge-item">
-                                <span>🎨</span> <span class="badge-text">Graphic Design</span>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrap">
+                                    <span class="skill-icon">🎨</span>
+                                </div>
+                                <div class="skill-info">
+                                    <h5>Graphic Design</h5>
+                                    <p>Posters & visual assets</p>
+                                </div>
                             </div>
-                            <div class="badge-item">
-                                <span>🎓</span> <span class="badge-text">Coding Tutor</span>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrap">
+                                    <span class="skill-icon">🎓</span>
+                                </div>
+                                <div class="skill-info">
+                                    <h5>Coding Tutor</h5>
+                                    <p>In-home & holiday classes</p>
+                                </div>
                             </div>
-                            <div class="badge-item">
-                                <span>🚀</span> <span class="badge-text">Tech Consult</span>
+                            <div class="skill-card">
+                                <div class="skill-icon-wrap">
+                                    <span class="skill-icon">🚀</span>
+                                </div>
+                                <div class="skill-info">
+                                    <h5>Tech Consult</h5>
+                                    <p>Systems & strategy</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -187,68 +188,51 @@
 
                     <div class="showcase-display">
                         <div class="showcase-panel active" id="proj-1">
-                            <div class="sp-image" style="background:linear-gradient(135deg,#0f172a,#334155);">
-                                <span class="sp-icon">🚀</span>
-                            </div>
+                            <div class="sp-image"><img src="./images/link.png" alt="Starlink" class="sp-custom-img"></div>
                             <div class="sp-content">
                                 <h3>Starlink Ultranet</h3>
                                 <p>Fast, reliable internet landing page with plan selection and interactive features.</p>
                                 <a href="https://star-black-alpha.vercel.app/" target="_blank" class="btn p">Visit Live Site ↗</a>
                             </div>
                         </div>
-
                         <div class="showcase-panel" id="proj-2">
-                            <div class="sp-image" style="background:linear-gradient(135deg,#059669,#064e3b);">
-                                <span class="sp-icon">🌱</span>
-                            </div>
+                            <div class="sp-image"><img src="./images/Hp.png" alt="Hope Lifting" class="sp-custom-img"></div>
                             <div class="sp-content">
                                 <h3>Hope Lifting</h3>
                                 <p>A community-focused platform designed to uplift and support local initiatives.</p>
                                 <a href="https://hopelifting.co.ke/" target="_blank" class="btn p">Visit Live Site ↗</a>
                             </div>
                         </div>
-
                         <div class="showcase-panel" id="proj-3">
-                            <div class="sp-image" style="background:linear-gradient(135deg,#1e3a8a,#0f1f5c);">
-                                <span class="sp-icon">🛡️</span>
-                            </div>
+                            <div class="sp-image"><img src="./images/mx.png" alt="Maxis Security" class="sp-custom-img"></div>
                             <div class="sp-content">
                                 <h3>Maxis Security</h3>
                                 <p>Professional security services website for businesses, construction sites, and events.</p>
                                 <a href="https://reinchemo.github.io/security/" target="_blank" class="btn p">Visit Live Site ↗</a>
                             </div>
                         </div>
-
                         <div class="showcase-panel" id="proj-4">
-                            <div class="sp-image" style="background:linear-gradient(135deg,#84cc16,#4d7c0f);">
-                                <span class="sp-icon">🏗️</span>
-                            </div>
+                            <div class="sp-image"><img src="./images/MA.png" alt="MA'ALIT" class="sp-custom-img"></div>
                             <div class="sp-content">
                                 <h3>MA’ALIT Works Ltd</h3>
                                 <p>A Kenyan contractor specializing in waterproofing, damp proofing and building repairs.</p>
                                 <a href="https://reinchemo.github.io/MA-ALIT/" target="_blank" class="btn p">Visit Live Site ↗</a>
                             </div>
                         </div>
-
                         <div class="showcase-panel" id="proj-5">
-                            <div class="sp-image" style="background:linear-gradient(135deg,#ec4899,#be185d);">
-                                <span class="sp-icon">✨</span>
-                            </div>
+                            <div class="sp-image"><img src="./images/perfume.png" alt="Glowing Perfume" class="sp-custom-img"></div>
                             <div class="sp-content">
                                 <h3>Glowing Perfume</h3>
                                 <p>A sleek, modern e-commerce experience for luxury fragrances.</p>
                                 <a href="https://reinchemo.github.io/Glowing_perfume/" target="_blank" class="btn p">Visit Live Site ↗</a>
                             </div>
                         </div>
-
                         <div class="showcase-panel" id="proj-6">
-                            <div class="sp-image" style="background:linear-gradient(135deg,#475569,#1e293b);">
-                                <span class="sp-icon">📊</span>
-                            </div>
+                            <div class="sp-image"><img src="./images/sta.png" alt="Investors Lake" class="sp-custom-img"></div>
                             <div class="sp-content">
                                 <h3>Investors Lake</h3>
-                                <p>Secure financial dashboard. (Video preview coming soon).</p>
-                                <button class="btn o" style="cursor: not-allowed;" disabled>Private Login</button>
+                                <p>Secure financial dashboard and investment tracking platform.</p>
+                                <a href="https://investors-lake.vercel.app/" target="_blank" class="btn p">Visit Live Site ↗</a>
                             </div>
                         </div>
                     </div>
@@ -257,7 +241,7 @@
         </div>
     </section>
 
-    <!-- Creative Teaching Video -->
+    <!-- Creative Teaching Section -->
     <section id="teach">
         <div class="wrap">
             <div class="center-header rv">
@@ -266,17 +250,41 @@
                 <p>Watch how I break complex programming ideas into fun, easy lessons for young minds.</p>
             </div>
 
-            <div class="snake-border-wrapper rv" style="max-width: 960px; margin: 0 auto;">
-                <div class="video-container-inner">
-                    <div class="floating-badge">Live Class 🎓</div>
-                    <video controls poster="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1200&q=80">
-                        <source src="your-teaching-video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+            <div class="snake-border-wrapper rv" style="max-width: 1000px; margin: 0 auto;">
+                <div class="teaching-display">
+                    <div class="teach-image">
+                        <!-- Shows an image initially -->
+                        <img src="https://www.9jacodekids.com/wp-content/uploads/2021/03/Tejiri-Image_compressed.jpeg" alt="Teaching Kids to Code">
+                        <div class="teach-badge">🎓 Live Class</div>
+                    </div>
+                    <div class="teach-content">
+                        <h3>Making code fun and simple.</h3>
+                        <p>I specialize in introducing young minds to the world of technology through personalized, in-person lessons. I travel to students' homes to teach, making it convenient and comfortable for them to learn at their own pace.</p>
+                        <p>I also offer flexible weekend classes and intensive holiday bootcamps during school breaks, breaking down complex programming concepts like loops, variables, and logic into fun, hands-on activities.</p>
+                        <p>Whether it's building their first game or designing a simple webpage, I ensure every child feels confident and excited to learn.</p>
+
+                        <button onclick="openVideoModal()" class="btn p glow-btn">
+                            ▶ Watch Live Class
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- NEW: Video Modal Popup -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <button class="close-video" onclick="closeVideoModal()">&times;</button>
+
+            <!-- REPLACE 'your-teaching-video.mp4' WITH YOUR ACTUAL FILE -->
+            <video id="teachVideo" controls playsinline>
+                <source src="./videos/Video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+    </div>
 
     <!-- Posters -->
     <section id="posters" class="cr">
@@ -284,28 +292,89 @@
             <div class="center-header rv">
                 <span class="subtitle">Graphic design</span>
                 <h2 class="glow-heading">Posters & visual assets</h2>
-                <p>Clean, impactful designs that communicate your message clearly.</p>
+
+                <!-- NEW PARAGRAPH ADDED HERE -->
+                <p style="margin-bottom: 8px;">I create stunning graphic designs tailored to your specific needs.</p>
+                <p style="font-size: 16px; color: var(--muted);">From business cards, wedding and graduation invitations, to event posters and promotional ads. I design professional visuals that perfectly suit your brand and message.</p>
+
             </div>
 
             <div class="poster-grid rv">
-                <div class="poster-item">
-                    <!-- REPLACE SRC WITH YOUR IMAGE -->
-                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="Poster 1">
+                <div class="poster-item" onclick="openLightbox('./images/B1.png')">
+                    <img src="./images/B1.png" alt="Poster 1">
                     <div class="poster-overlay">View design ↗</div>
                 </div>
-                <div class="poster-item">
-                    <!-- REPLACE SRC WITH YOUR IMAGE -->
-                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" alt="Poster 2">
+                <div class="poster-item" onclick="openLightbox('./images/B2.png')">
+                    <img src="./images/B2.png" alt="Poster 2">
                     <div class="poster-overlay">View design ↗</div>
                 </div>
-                <div class="poster-item">
-                    <!-- REPLACE SRC WITH YOUR IMAGE -->
-                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=600&q=80" alt="Poster 3">
+                <div class="poster-item" onclick="openLightbox('./images/B3.png')">
+                    <img src="./images/B3.png" alt="Poster 3">
+                    <div class="poster-overlay">View design ↗</div>
+                </div>
+                <div class="poster-item" onclick="openLightbox('./images/B4.png')">
+                    <img src="./images/B4.png" alt="Poster 4">
+                    <div class="poster-overlay">View design ↗</div>
+                </div>
+                <div class="poster-item" onclick="openLightbox('./images/B5.png')">
+                    <img src="./images/B5.png" alt="Poster 5">
+                    <div class="poster-overlay">View design ↗</div>
+                </div>
+                <div class="poster-item" onclick="openLightbox('./images/B6.png')">
+                    <img src="./images/B6.png" alt="Poster 6">
                     <div class="poster-overlay">View design ↗</div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Power Point Designs Section -->
+    <section id="pdfs" class="cr">
+        <div class="wrap">
+            <div class="center-header rv">
+                <span class="subtitle">Documents</span>
+                <h2 class="glow-heading">Power Point Designs</h2>
+                <p>Explore my professional document and layout designs.</p>
+            </div>
+
+            <div class="pdf-grid rv">
+                <!-- PDF 1 -->
+                <a href="./pdfs/comp.pdf" target="_blank" class="pdf-card">
+                    <div class="pdf-visual">
+                        <div class="pdf-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                        <span class="pdf-type">PDF</span>
+                    </div>
+                    <div class="pdf-info">
+                        <h3>Computer & Coding Presentation</h3>
+                        <p>Click to view the full document</p>
+                        <span class="pdf-btn">Open Document ↗</span>
+                    </div>
+                </a>
+
+                <!-- PDF 2 -->
+                <a href="./pdfs/Finance.pdf" target="_blank" class="pdf-card">
+                    <div class="pdf-visual">
+                        <div class="pdf-icon">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                        <span class="pdf-type">PDF</span>
+                    </div>
+                    <div class="pdf-info">
+                        <h3>Annual Report Presentation</h3>
+                        <p>Click to view the full document</p>
+                        <span class="pdf-btn">Open Document ↗</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Full Poster">
+    </div>
 
     <!-- Footer -->
     <footer id="contact">
@@ -314,7 +383,8 @@
             <div class="footer-cta rv">
                 <h2>Ready to take your brand online?</h2>
                 <p>Book your first project now and get 10% off. Tell me what you need and I’ll reply with a plan.</p>
-                <a class="btn p glow-btn" href="mailto:hello@reinhard.com">Book a project now</a>
+                <!-- UPDATED TO WHATSAPP -->
+                <a class="btn p glow-btn" href="https://wa.me/254759592457" target="_blank">Book a project now</a>
             </div>
             <div class="footer-links">
                 <div class="f-col">
@@ -330,10 +400,9 @@
                 </div>
                 <div class="f-col">
                     <h4>Connect</h4>
-                    <a href="#">GitHub</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Twitter</a>
-                    <a href="tel:+1234567890">+123-456-7890</a>
+                    <a href="https://github.com/reinchemo">GitHub</a>
+                    <a href="https://www.linkedin.com/in/reinhard-chemonges-15a52a216/">LinkedIn</a>
+                    <a href="tel:+254759592457">+254 759 592 457</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -342,7 +411,8 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" rel="noopener">
+    <!-- UPDATED TO WHATSAPP -->
+    <a href="https://wa.me/254759592457" class="whatsapp-float" target="_blank" rel="noopener">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
         <span>WhatsApp me</span>
     </a>

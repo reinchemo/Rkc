@@ -27,7 +27,6 @@
             setMenu(!navLinks.classList.contains("active"));
         });
 
-        // Close menu when clicking a link
         $$("#navLinks a").forEach(link => {
             link.addEventListener("click", () => setMenu(false));
         });
@@ -43,11 +42,9 @@
 
     tabButtons.forEach(btn => {
         btn.addEventListener("click", () => {
-            // Remove active class from all
             tabButtons.forEach(b => b.classList.remove("active"));
             panels.forEach(p => p.classList.remove("active"));
 
-            // Add active to clicked button and target panel
             btn.classList.add("active");
             const targetId = btn.getAttribute("data-target");
             const targetPanel = document.getElementById(targetId);
@@ -114,5 +111,90 @@
     backToTop.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
     });
+
+    /* ---------- 7. Video Progress Bar & 10-Second Trim Loop ---------- */
+    const reelVideo = document.getElementById('hero-reel-video');
+    const videoProgress = document.getElementById('video-progress');
+    const TRIM_DURATION = 10.0; // Loops every 10 seconds
+
+    if (reelVideo && videoProgress) {
+        reelVideo.addEventListener('loadedmetadata', () => {
+            reelVideo.currentTime = 0;
+        });
+
+        reelVideo.addEventListener('timeupdate', () => {
+            if (reelVideo.currentTime >= TRIM_DURATION) {
+                reelVideo.currentTime = 0;
+            }
+            const percent = (reelVideo.currentTime / TRIM_DURATION) * 100;
+            videoProgress.style.width = `${percent}%`;
+        });
+    }
+
+    /* ---------- 8. Poster Lightbox ---------- */
+    window.openLightbox = function(imageSrc) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        if (lightbox && lightboxImg) {
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    window.closeLightbox = function() {
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    const lightboxEl = document.getElementById('lightbox');
+    if (lightboxEl) {
+        lightboxEl.addEventListener('click', (e) => {
+            if (e.target === lightboxEl) {
+                window.closeLightbox();
+            }
+        });
+    }
+
+    /* ---------- 9. Video Modal Logic ---------- */
+    window.openVideoModal = function() {
+        const modal = document.getElementById('videoModal');
+        const video = document.getElementById('teachVideo');
+
+        if (modal && video) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevents background scrolling
+
+            // Optional: Starts playing immediately when opened
+            video.play();
+        }
+    }
+
+    window.closeVideoModal = function() {
+        const modal = document.getElementById('videoModal');
+        const video = document.getElementById('teachVideo');
+
+        if (modal && video) {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Restores scrolling
+
+            // Stops the video and resets it to the beginning
+            video.pause();
+            video.currentTime = 0;
+        }
+    }
+
+    // Close modal if user clicks outside the video
+    const videoModalEl = document.getElementById('videoModal');
+    if (videoModalEl) {
+        videoModalEl.addEventListener('click', (e) => {
+            if (e.target === videoModalEl) {
+                window.closeVideoModal();
+            }
+        });
+    }
 
 })();

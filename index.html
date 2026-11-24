@@ -23,7 +23,7 @@
   <title>Reinhard Chemonges | Freelance Web Developer & Website Designer in Kenya</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
@@ -103,8 +103,8 @@
         <div class="hero-visual reveal">
           <div class="hero-video-frame">
             <div class="hero-video-top"><span class="window-dots"><i></i><i></i><i></i></span><strong>MY PRODUCTIVITY SPACE</strong><span class="live-label">PLAYING</span></div>
-            <video class="hero-setup-video" autoplay muted loop controls playsinline preload="metadata" aria-label="Reinhard's productivity and coding workspace">
-              <source src="./videos/Video.mp4" type="video/mp4">
+            <video class="hero-setup-video" autoplay muted loop playsinline preload="auto" aria-label="Reinhard productivity space video, playing automatically on repeat">
+              <source src="./videos/Video2.mp4" type="video/mp4">
               Your browser does not support video playback.
             </video>
           </div>
@@ -201,5 +201,23 @@
   <a class="whatsapp-float" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Reinhard on WhatsApp"><span>✆</span> Let's talk</a>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Graphic design preview"><button class="lightbox-close" type="button" aria-label="Close preview">×</button><img id="lightboxImage" src="" alt="Expanded graphic design"></div>
   <script src="script.js" defer></script>
+<script>
+(() => {
+  const video = document.querySelector('.hero-setup-video');
+  if (!video) return;
+  video.muted = true;
+  video.loop = true;
+  video.playsInline = true;
+  const startPlayback = () => {
+    if (document.visibilityState === 'visible') {
+      const attempt = video.play();
+      if (attempt && typeof attempt.catch === 'function') attempt.catch(() => {});
+    }
+  };
+  video.addEventListener('canplay', startPlayback, { once: true });
+  document.addEventListener('visibilitychange', startPlayback);
+  startPlayback();
+})();
+</script>
 </body>
 </html>

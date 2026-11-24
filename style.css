@@ -53,3 +53,74 @@ body{font-size:17px;line-height:1.75}
  .hero-video-frame{transform:none;padding:10px}.hero-video-top{font-size:8px}.hero-video-caption{font-size:9px}.hero-video-caption b{font-size:11px}
 }
 @media(max-width:430px){.hero-video-caption{align-items:flex-start;flex-direction:column;gap:4px}.hero-video-top .live-label{font-size:7px}}
+
+
+/* Stronger site-wide typography and the portrait productivity-space video */
+html{font-size:18px}
+body{font-size:18px;line-height:1.8}
+.site-nav .nav-links{font-size:16px}
+.brand{font-size:17px}
+.brand small{font-size:12px}
+.hero h1{font-size:clamp(52px,6.7vw,82px);line-height:1.08}
+.hero-lead{font-size:20px;line-height:1.85}
+.eyebrow{font-size:13px}
+.button{font-size:16px}
+.hero-proof{font-size:15px;line-height:1.7}
+.hero-bottom>span{font-size:12px}
+.hero-bottom>div{font-size:15px}
+.section-kicker{font-size:14px}
+.section-heading h2,.about-copy h2,.skills-layout h2,.teaching-layout h2{font-size:clamp(39px,4.4vw,58px);line-height:1.15}
+.section-heading>p{font-size:18px;line-height:1.8}
+.service-card h3{font-size:24px}
+.service-number{font-size:12px}
+.service-card>p{font-size:16px;line-height:1.85}
+.service-card li{font-size:15px;line-height:1.6}
+.text-link{font-size:15px}
+.project-meta{font-size:12px}
+.project-card h3{font-size:25px}
+.project-card>p{font-size:16px;line-height:1.85}
+.tag-list span{font-size:12px}
+.project-note{font-size:14px}
+.process-step h3{font-size:21px}
+.process-step p{font-size:16px;line-height:1.8}
+.about-copy>p,.muted-copy,.teaching-layout p{font-size:17px;line-height:1.9}
+.photo-caption b{font-size:17px}
+.photo-caption span{font-size:13px}
+.skill-cloud span{font-size:15px}
+.contact-inner h2{font-size:clamp(45px,6vw,74px)}
+.contact-inner>p{font-size:18px;line-height:1.85}
+.contact-phone{font-size:15px}
+.footer-main>div:first-child>p{font-size:15px;line-height:1.8}
+.footer-col b{font-size:15px}
+.footer-col a{font-size:14px}
+.footer-bottom{font-size:13px}
+.whatsapp-float{font-size:14px}
+.hero-video-frame{transform:none;padding:15px}
+.hero-video-top{justify-content:space-between;gap:10px;padding:7px 6px 15px;font-size:14px;letter-spacing:.06em}
+.hero-video-top strong{font:800 17px 'Manrope',sans-serif;color:#f1f5ff;letter-spacing:.02em}
+.hero-video-top .live-label{padding:6px 11px;border-radius:7px;background:#303b43;color:#fff;font-size:12px;letter-spacing:0}
+.hero-setup-video{display:block;width:100%;aspect-ratio:3/4;max-height:520px;object-fit:cover;border-radius:14px;background:#050e1b}
+@media(max-width:760px){
+ body{font-size:17px}
+ .site-nav .nav-links{font-size:17px}
+ .hero h1{font-size:clamp(45px,11.5vw,66px)}
+ .hero-lead{font-size:18px}
+ .section-heading h2,.about-copy h2,.skills-layout h2,.teaching-layout h2{font-size:clamp(36px,9vw,48px)}
+ .section-heading>p{font-size:17px}
+ .service-card h3{font-size:23px}
+ .service-card>p,.project-card>p{font-size:16px}
+ .service-card li{font-size:15px}
+ .project-card h3{font-size:24px}
+ .process-step h3{font-size:20px}
+ .process-step p{font-size:15px}
+ .about-copy>p,.muted-copy,.teaching-layout p{font-size:16px}
+ .hero-video-frame{padding:11px}
+ .hero-video-top{font-size:11px}
+ .hero-video-top strong{font-size:14px}
+ .hero-video-top .live-label{font-size:10px}
+}
+@media(max-width:430px){
+ .hero-video-top{gap:6px}
+ .hero-video-top strong{font-size:12px}
+ .hero-video-top .live-label{font-size:9px;padding:5px 7px}
+}

@@ -1,463 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#f8fafc">
-
-    <!-- Primary SEO Meta Tags -->
-    <title>Reinhard | Full-Stack Web Developer & Designer in Kenya</title>
-    <meta name="description" content="Reinhard is a full-stack web developer and designer based in Kenya. I build fast, responsive websites, design impactful posters, and tutor children in coding.">
-    <meta name="keywords" content="Web Developer Kenya, Full-Stack Developer, Website Design, Coding Tutor, Graphic Design Kenya, Reinhard Chemonges">
-    <meta name="author" content="Reinhard Chemonges">
-
-    <!-- Canonical URL (Tells Google this is the main URL) -->
-    <link rel="canonical" href="https://www.reinhard.co.ke/" />
-
-    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.reinhard.co.ke/">
-    <meta property="og:title" content="Reinhard | Full-Stack Web Developer & Designer">
-    <meta property="og:description" content="I build fast, responsive websites and custom digital systems. Check out my portfolio of web apps, designs, and tutorials.">
-    <!-- Make sure this image exists on your site! -->
-    <meta property="og:image" content="https://www.reinhard.co.ke/images/rein%20no.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.reinhard.co.ke/">
-    <meta property="twitter:title" content="Reinhard | Full-Stack Web Developer">
-    <meta property="twitter:description" content="I build fast, responsive websites and custom digital systems.">
-    <meta property="twitter:image" content="https://www.reinhard.co.ke/images/rein%20no.png">
-
-    <!-- Structured Data (Schema) -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Reinhard Chemonges",
-            "jobTitle": "Full-Stack Web Developer",
-            "url": "https://www.reinhard.co.ke/",
-            "sameAs": [
-                "https://www.linkedin.com/in/reinhard-chemonges-15a52a216/",
-                "https://github.com/reinchemo"
-            ],
-            "knowsAbout": ["Web Development", "Graphic Design", "Coding Tutoring", "React", "Node.js", "Digital Systems"]
-        }
-    </script>
-
-    <!-- Fonts & CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081426">
+  <meta name="description" content="Reinhard helps businesses grow online with professional websites, e-commerce stores, custom business systems and graphic design. Based in Kenya, available for freelance projects.">
+  <meta name="keywords" content="freelance web developer Kenya, website designer Kenya, e-commerce website, business systems, graphic design, Reinhard, Reinovate">
+  <meta name="author" content="Reinhard Chemonges">
+  <link rel="canonical" href="https://www.reinhard.co.ke/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.reinhard.co.ke/">
+  <meta property="og:title" content="Reinhard | Websites & Digital Solutions for Growing Businesses">
+  <meta property="og:description" content="Professional websites, online stores, custom business systems and graphic design. Let's build something that moves your business forward.">
+  <meta property="og:image" content="https://www.reinhard.co.ke/images/rein%20no.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Reinhard | Freelance Web Developer & Digital Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Reinovate",
+    "founder":{"@type":"Person","name":"Reinhard Chemonges"},
+    "url":"https://www.reinhard.co.ke/",
+    "telephone":"+254759592457",
+    "areaServed":["Kenya","Worldwide"],
+    "description":"Freelance website development, e-commerce, custom business systems and graphic design."
+  }
+  </script>
 </head>
-
 <body>
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner wrap">
+      <a class="brand" href="#home" aria-label="Reinhard home"><span class="brand-mark">R</span><span>REINOVATE<small>by Reinhard</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a><a href="#work">My work</a><a href="#process">How it works</a><a href="#about">About</a>
+        <a class="nav-cta" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">Start a project <span>↗</span></a>
+      </div>
+    </div>
+  </nav>
 
-    <nav>
-        <div class="wrap">
-            <a class="logo" href="#home">
-                <svg class="live-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 5 L93 25 L93 75 L50 95 L7 75 L7 25 Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/>
-                    <path d="M35 30 V70 M35 30 H55 C65 30 65 50 55 50 H35 M50 50 L65 70" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg> Reinhard
-                <span>.</span>
-            </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-                <svg class="icon-menu" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-                <svg class="icon-close" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M18 6L6 18M6 6l12 12"/></svg>
-            </button>
-            <div class="links" id="navLinks">
-                <a href="#about">About</a>
-                <a href="#systems">Systems</a>
-                <a href="#teach">Teaching</a>
-                <a href="#posters">Posters</a>
-                <!-- UPDATED TO WHATSAPP -->
-                <a class="btn p" href="https://wa.me/254759592457" target="_blank">Hire me</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero -->
+  <main>
     <header class="hero" id="home">
-        <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
-        <div class="grid-bg" aria-hidden="true"></div>
-
-        <div class="wrap">
-            <div class="hero-content">
-                <span class="hello h-in" style="--d:0"><span class="dot"></span>Available now for new projects</span>
-                <h1 class="split" aria-label="Websites for businesses that grow.">
-                    <span class="w" style="--i:0">Websites</span>
-                    <span class="w" style="--i:1">for</span>
-                    <span class="w" style="--i:2">businesses</span>
-                    <span class="w" style="--i:3">that</span>
-                    <span class="w gradient-text" style="--i:4">grow.</span>
-                </h1>
-                <p class="lead h-in" style="--d:6">I build fast, responsive websites and custom digital systems. From clean design to seamless functionality, I handle the entire web development process.</p>
-                <div class="cta h-in" style="--d:7">
-                    <!-- UPDATED TO WHATSAPP -->
-                    <a class="btn p glow-btn" href="https://wa.me/254759592457" target="_blank">Hire me</a>
-                    <a class="btn o" href="#systems">See my work</a>
-                </div>
-            </div>
-
-            <!-- Hero Graphics -->
-            <div class="hero-graphics" aria-hidden="true">
-                <div class="hero-bg-deco"></div>
-                <!-- Card 1: Code Window -->
-                <div class="hero-card code-card">
-                    <div class="bar"><span></span><span></span><span></span><code>developer.js</code></div>
-                    <div class="code-block">
-                        <div class="line"><span class="kw">const</span> <span class="var">developer</span> = {</div>
-                        <div class="line indent"><span class="prop">name</span>: <span class="str">'Reinhard'</span>,</div>
-                        <div class="line indent"><span class="prop">role</span>: <span class="str">'Full-Stack Dev'</span>,</div>
-                        <div class="line indent"><span class="prop">skills</span>: [<span class="str">'Website'</span>, <span class="str">'Graphic'</span>],</div>
-                        <div class="line indent"><span class="prop">focus</span>: <span class="str">'Building Systems'</span></div>
-                        <div class="line">};<span class="cursor">|</span></div>
-                    </div>
-                </div>
-
-                <!-- Card 2: Video Reel -->
-                <div class="reel-wrapper">
-                    <div class="hero-card reel-card">
-                        <div class="reel-header">
-                            <div class="reel-dot"></div>
-                            <h4>My Productivity Space</h4>
-                        </div>
-                        <!-- Aspect ratio adjusted in CSS -->
-                        <div class="reel-screen">
-                            <video id="hero-reel-video" src="./videos/Video.mp4" autoplay loop muted playsinline class="reel-video"></video>
-                            <div class="reel-overlay"><span>PLAYING</span></div>
-                        </div>
-                        <div class="reel-progress">
-                            <div class="reel-progress-bar" id="video-progress"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div><div class="hero-grid"></div>
+      <div class="wrap hero-layout">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> INDEPENDENT FREELANCE DEVELOPER · KENYA</div>
+          <h1>Let's build something that <span class="gradient-text">grows your business.</span></h1>
+          <p class="hero-lead">I help businesses get online, sell more effectively and work smarter with professional websites, e-commerce stores and custom digital systems.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%27d%20like%20a%20free%20project%20consultation." target="_blank" rel="noopener">Get a free consultation <span>↗</span></a>
+            <a class="button button-ghost" href="#work">Explore my work <span>↓</span></a>
+          </div>
+          <div class="hero-proof"><span class="proof-icon">✦</span><span>Practical digital solutions, thoughtful design and direct communication.</span></div>
         </div>
+        <div class="hero-visual reveal">
+          <div class="visual-frame">
+            <div class="visual-top"><span class="window-dots"><i></i><i></i><i></i></span><span>YOUR NEXT DIGITAL PROJECT</span><span class="live-label">● LIVE IDEAS</span></div>
+            <div class="visual-screen">
+              <div class="screen-kicker">DESIGN · BUILD · GROW</div>
+              <div class="screen-title">Your business,<br><em>online and ready.</em></div>
+              <div class="screen-lines"><i></i><i></i><i></i></div>
+              <div class="screen-button">Let's get started <b>↗</b></div>
+              <div class="screen-orbit orbit-a"></div><div class="screen-orbit orbit-b"></div>
+            </div>
+            <div class="visual-bottom"><span>WEB DEVELOPMENT</span><span>✦</span><span>BUSINESS SYSTEMS</span></div>
+          </div>
+          <div class="floating-note"><span class="note-icon">✳</span><span><b>Built around your needs</b><small>Not one-size-fits-all templates</small></span></div>
+        </div>
+      </div>
+      <div class="wrap hero-bottom"><span>WHAT I CAN HELP YOU WITH</span><div><b>Websites</b><i>·</i><b>Online stores</b><i>·</i><b>Business systems</b><i>·</i><b>Graphic design</b></div></div>
     </header>
 
-    <!-- About -->
-    <section id="about">
-        <div class="wrap">
-            <div class="about-grid rv">
-                <div class="profile-card">
-                    <div class="profile-img-wrapper">
-                        <img src="./images/rein no.png" alt="Reinhard" class="profile-img">
-                        <div class="status-badge"><span class="status-dot"></span> Available</div>
-                    </div>
-                    <div class="profile-info">
-                        <h3>Reinhard</h3>
-                        <p>Full-Stack Developer</p>
-                    </div>
-                </div>
-
-                <div class="about-content">
-                    <h2 class="glow-heading">Developer, designer and teacher.</h2>
-                    <div class="bio-text">
-                        <p>I’m a full-stack developer focused on building websites and digital systems that are actually easy to use.</p>
-                        <p>I always design with the user in mind first, and then write the code. I love researching new tech and helping beginners learn how to code.</p>
-                    </div>
-
-                    <!-- Gradient Skill Cards -->
-                    <div class="services-badges">
-                        <h4>What I Do</h4>
-                        <div class="badges-grid">
-                            <div class="skill-card">
-                                <div class="skill-icon-wrap">
-                                    <span class="skill-icon">💻</span>
-                                </div>
-                                <div class="skill-info">
-                                    <h5>Web Development</h5>
-                                    <p>Fast & responsive sites</p>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon-wrap">
-                                    <span class="skill-icon">🎨</span>
-                                </div>
-                                <div class="skill-info">
-                                    <h5>Graphic Design</h5>
-                                    <p>Posters & visual assets</p>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon-wrap">
-                                    <span class="skill-icon">🎓</span>
-                                </div>
-                                <div class="skill-info">
-                                    <h5>Coding Tutor</h5>
-                                    <p>In-home & holiday classes</p>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-icon-wrap">
-                                    <span class="skill-icon">🚀</span>
-                                </div>
-                                <div class="skill-info">
-                                    <h5>Tech Consult</h5>
-                                    <p>Systems & strategy</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section services-section" id="services">
+      <div class="wrap">
+        <div class="section-heading reveal"><div><span class="section-kicker">SERVICES</span><h2>What does your business need?</h2></div><p>Choose a service to explore how I can help you solve a real business need.</p></div>
+        <div class="service-grid">
+          <article class="service-card reveal"><div class="service-icon icon-blue">⌘</div><span class="service-number">01 / WEB</span><h3>Business websites</h3><p>Professional, mobile-friendly websites that explain what you do, build trust and make it easy for customers to contact you.</p><ul><li>Company and service websites</li><li>Hotel and hospitality websites</li><li>Landing pages and portfolios</li></ul><a class="text-link" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%27m%20interested%20in%20a%20business%20website." target="_blank" rel="noopener">Discuss a website <span>↗</span></a></article>
+          <article class="service-card reveal"><div class="service-icon icon-violet">▣</div><span class="service-number">02 / E-COMMERCE</span><h3>Online stores</h3><p>Give customers a convenient way to discover your products, browse your catalogue and place orders online.</p><ul><li>Product catalogues</li><li>Shopping and enquiry flows</li><li>Storefronts for growing brands</li></ul><a class="text-link" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%27d%20like%20an%20e-commerce%20website." target="_blank" rel="noopener">Discuss an online store <span>↗</span></a></article>
+          <article class="service-card reveal"><div class="service-icon icon-teal">▦</div><span class="service-number">03 / DIGITAL SYSTEMS</span><h3>Custom business systems</h3><p>Reduce manual work and keep important business information organised with systems designed around your workflow.</p><ul><li>Expenditure and record tracking</li><li>Staff and management portals</li><li>Dashboards and reporting tools</li></ul><a class="text-link" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%20need%20a%20custom%20business%20system." target="_blank" rel="noopener">Discuss a system <span>↗</span></a></article>
+          <article class="service-card reveal"><div class="service-icon icon-orange">✳</div><span class="service-number">04 / CREATIVE</span><h3>Graphic design</h3><p>Clear, engaging visuals that help your business communicate professionally and promote its products or events.</p><ul><li>Promotional posters and adverts</li><li>Invitations and business materials</li><li>Social media graphics</li></ul><a class="text-link" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%27m%20looking%20for%20graphic%20design%20services." target="_blank" rel="noopener">Discuss a design <span>↗</span></a></article>
         </div>
+      </div>
     </section>
 
-    <!-- Interactive Systems Section -->
-    <section id="systems" class="cr">
-        <div class="wrap">
-            <div class="center-header rv">
-                <span class="subtitle">Web development</span>
-                <h2 class="glow-heading">Systems I have built</h2>
-                <p>Click a tab to instantly preview live, custom web applications and systems.</p>
-            </div>
-
-            <div class="snake-border-wrapper rv">
-                <div class="interactive-showcase">
-                    <div class="showcase-tabs">
-                        <button class="tab-btn active" data-target="proj-1" style="--tab-color: #0f172a;">Starlink</button>
-                        <button class="tab-btn" data-target="proj-2" style="--tab-color: #059669;">Hope Lifting</button>
-                        <button class="tab-btn" data-target="proj-3" style="--tab-color: #1e3a8a;">Maxis Security</button>
-                        <button class="tab-btn" data-target="proj-4" style="--tab-color: #84cc16;">MA'ALIT</button>
-                        <button class="tab-btn" data-target="proj-5" style="--tab-color: #ec4899;">Perfume</button>
-                        <button class="tab-btn" data-target="proj-6" style="--tab-color: #475569;">Investors Lake</button>
-                    </div>
-
-                    <div class="showcase-display">
-                        <div class="showcase-panel active" id="proj-1">
-                            <div class="sp-image"><img src="./images/link.png" alt="Starlink" class="sp-custom-img"></div>
-                            <div class="sp-content">
-                                <h3>Starlink Ultranet</h3>
-                                <p>Fast, reliable internet landing page with plan selection and interactive features.</p>
-                                <a href="https://star-black-alpha.vercel.app/" target="_blank" class="btn p">Visit Live Site ↗</a>
-                            </div>
-                        </div>
-                        <div class="showcase-panel" id="proj-2">
-                            <div class="sp-image"><img src="./images/Hp.png" alt="Hope Lifting" class="sp-custom-img"></div>
-                            <div class="sp-content">
-                                <h3>Hope Lifting</h3>
-                                <p>A community-focused platform designed to uplift and support local initiatives.</p>
-                                <a href="https://hopelifting.co.ke/" target="_blank" class="btn p">Visit Live Site ↗</a>
-                            </div>
-                        </div>
-                        <div class="showcase-panel" id="proj-3">
-                            <div class="sp-image"><img src="./images/mx.png" alt="Maxis Security" class="sp-custom-img"></div>
-                            <div class="sp-content">
-                                <h3>Maxis Security</h3>
-                                <p>Professional security services website for businesses, construction sites, and events.</p>
-                                <a href="https://reinchemo.github.io/security/" target="_blank" class="btn p">Visit Live Site ↗</a>
-                            </div>
-                        </div>
-                        <div class="showcase-panel" id="proj-4">
-                            <div class="sp-image"><img src="./images/MA.png" alt="MA'ALIT" class="sp-custom-img"></div>
-                            <div class="sp-content">
-                                <h3>MA’ALIT Works Ltd</h3>
-                                <p>A Kenyan contractor specializing in waterproofing, damp proofing and building repairs.</p>
-                                <a href="https://reinchemo.github.io/MA-ALIT/" target="_blank" class="btn p">Visit Live Site ↗</a>
-                            </div>
-                        </div>
-                        <div class="showcase-panel" id="proj-5">
-                            <div class="sp-image"><img src="./images/perfume.png" alt="Glowing Perfume" class="sp-custom-img"></div>
-                            <div class="sp-content">
-                                <h3>Glowing Perfume</h3>
-                                <p>A sleek, modern e-commerce experience for luxury fragrances.</p>
-                                <a href="https://reinchemo.github.io/Glowing_perfume/" target="_blank" class="btn p">Visit Live Site ↗</a>
-                            </div>
-                        </div>
-                        <div class="showcase-panel" id="proj-6">
-                            <div class="sp-image"><img src="./images/sta.png" alt="Investors Lake" class="sp-custom-img"></div>
-                            <div class="sp-content">
-                                <h3>Investors Lake</h3>
-                                <p>Secure financial dashboard and investment tracking platform.</p>
-                                <a href="https://investors-lake.vercel.app/" target="_blank" class="btn p">Visit Live Site ↗</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section work-section" id="work">
+      <div class="wrap">
+        <div class="section-heading reveal"><div><span class="section-kicker">SELECTED WORK</span><h2>Ideas turned into digital experiences.</h2></div><p>A selection of websites and digital projects. Open a live project to explore the experience.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-feature reveal"><a class="project-image" href="https://investors-lake.vercel.app/" target="_blank" rel="noopener"><img src="./images/sta.png" alt="Investors Lake dashboard project" loading="lazy"><span class="image-action">View project ↗</span></a><div class="project-meta"><span>BUSINESS SYSTEM</span><span>01</span></div><h3>Investors Lake</h3><p>A financial dashboard and investment-tracking platform designed to organise records and present key information in one place.</p><div class="tag-list"><span>Dashboards</span><span>Financial tracking</span><span>Web app</span></div><a class="text-link" href="https://investors-lake.vercel.app/" target="_blank" rel="noopener">Explore live project ↗</a></article>
+          <article class="project-card reveal"><a class="project-image" href="https://hopelifting.co.ke/" target="_blank" rel="noopener"><img src="./images/Hp.png" alt="Hope Lifting website preview" loading="lazy"><span class="image-action">View project ↗</span></a><div class="project-meta"><span>ORGANISATION WEBSITE</span><span>02</span></div><h3>Hope Lifting</h3><p>A community-focused online platform created to present an organisation and its initiatives.</p><div class="tag-list"><span>Web design</span><span>Responsive</span></div><a class="text-link" href="https://hopelifting.co.ke/" target="_blank" rel="noopener">Explore live project ↗</a></article>
+          <article class="project-card reveal"><a class="project-image" href="https://reinchemo.github.io/security/" target="_blank" rel="noopener"><img src="./images/mx.png" alt="Maxis Security website preview" loading="lazy"><span class="image-action">View project ↗</span></a><div class="project-meta"><span>BUSINESS WEBSITE</span><span>03</span></div><h3>Maxis Security</h3><p>A professional web presence for a security services provider serving businesses, sites and events.</p><div class="tag-list"><span>Business website</span><span>Services</span></div><a class="text-link" href="https://reinchemo.github.io/security/" target="_blank" rel="noopener">Explore live project ↗</a></article>
+          <article class="project-card reveal"><a class="project-image" href="https://reinchemo.github.io/MA-ALIT/" target="_blank" rel="noopener"><img src="./images/MA.png" alt="MA'ALIT Works website preview" loading="lazy"><span class="image-action">View project ↗</span></a><div class="project-meta"><span>CONSTRUCTION WEBSITE</span><span>04</span></div><h3>MA’ALIT Works Ltd</h3><p>A company website presenting waterproofing, damp-proofing and building repair services.</p><div class="tag-list"><span>Company profile</span><span>Responsive</span></div><a class="text-link" href="https://reinchemo.github.io/MA-ALIT/" target="_blank" rel="noopener">Explore live project ↗</a></article>
+          <article class="project-card reveal"><a class="project-image" href="https://reinchemo.github.io/Glowing_perfume/" target="_blank" rel="noopener"><img src="./images/perfume.png" alt="Glowing Perfume online store preview" loading="lazy"><span class="image-action">View project ↗</span></a><div class="project-meta"><span>ONLINE STORE</span><span>05</span></div><h3>Glowing Perfume</h3><p>A product-focused e-commerce concept for presenting a fragrance range online.</p><div class="tag-list"><span>E-commerce</span><span>Product display</span></div><a class="text-link" href="https://reinchemo.github.io/Glowing_perfume/" target="_blank" rel="noopener">Explore live project ↗</a></article>
+          <article class="project-card reveal"><a class="project-image" href="https://star-black-alpha.vercel.app/" target="_blank" rel="noopener"><img src="./images/link.png" alt="Starlink Ultranet website preview" loading="lazy"><span class="image-action">View project ↗</span></a><div class="project-meta"><span>LANDING PAGE</span><span>06</span></div><h3>Starlink Ultranet</h3><p>An internet service landing page with plan information and interactive selection features.</p><div class="tag-list"><span>Landing page</span><span>Interactive UI</span></div><a class="text-link" href="https://star-black-alpha.vercel.app/" target="_blank" rel="noopener">Explore live project ↗</a></article>
         </div>
+        <p class="project-note">Project descriptions are concise summaries. Ask me about the scope, features and technologies relevant to your own project.</p>
+      </div>
     </section>
 
-    <!-- Creative Teaching Section -->
-    <section id="teach">
-        <div class="wrap">
-            <div class="center-header rv">
-                <span class="subtitle">Coding tutor</span>
-                <h2 class="glow-heading">I teach children how to code</h2>
-                <p>Watch how I break complex programming ideas into fun, easy lessons for young minds.</p>
-            </div>
-
-            <div class="snake-border-wrapper rv" style="max-width: 1000px; margin: 0 auto;">
-                <div class="teaching-display">
-                    <div class="teach-image">
-                        <!-- Shows an image initially -->
-                        <img src="https://www.9jacodekids.com/wp-content/uploads/2021/03/Tejiri-Image_compressed.jpeg" alt="Teaching Kids to Code">
-                        <div class="teach-badge">🎓 Live Class</div>
-                    </div>
-                    <div class="teach-content">
-                        <h3>Making code fun and simple.</h3>
-                        <p>I specialize in introducing young minds to the world of technology through personalized, in-person lessons. I travel to students' homes to teach, making it convenient and comfortable for them to learn at their own pace.</p>
-                        <p>I also offer flexible weekend classes and intensive holiday bootcamps during school breaks, breaking down complex programming concepts like loops, variables, and logic into fun, hands-on activities.</p>
-                        <p>Whether it's building their first game or designing a simple webpage, I ensure every child feels confident and excited to learn.</p>
-
-                        <button onclick="openVideoModal()" class="btn p glow-btn">
-                            ▶ Watch Live Class
-                        </button>
-                    </div>
-                </div>
-            </div>
+    <section class="section process-section" id="process">
+      <div class="wrap">
+        <div class="section-heading reveal"><div><span class="section-kicker">A SIMPLE PROCESS</span><h2>From first conversation to launch.</h2></div><p>You don't need to know the technical details. I'll guide you through each step.</p></div>
+        <div class="process-grid">
+          <div class="process-step reveal"><span>01</span><h3>Tell me what you need</h3><p>Share your idea, business goals, preferred features and timeline.</p></div>
+          <div class="process-step reveal"><span>02</span><h3>Plan the solution</h3><p>We agree on the scope, deliverables, timeline and project cost before work begins.</p></div>
+          <div class="process-step reveal"><span>03</span><h3>Design and build</h3><p>I develop the solution and share progress so we can refine it together.</p></div>
+          <div class="process-step reveal"><span>04</span><h3>Review and hand over</h3><p>You review the work, request agreed refinements and receive the completed project.</p></div>
         </div>
+      </div>
     </section>
 
-    <!-- NEW: Video Modal Popup -->
-    <div id="videoModal" class="video-modal">
-        <div class="video-modal-content">
-            <button class="close-video" onclick="closeVideoModal()">&times;</button>
-
-            <!-- REPLACE 'your-teaching-video.mp4' WITH YOUR ACTUAL FILE -->
-            <video id="teachVideo" controls playsinline>
-                <source src="./videos/Video2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-        </div>
-    </div>
-
-    <!-- Posters -->
-    <section id="posters" class="cr">
-        <div class="wrap">
-            <div class="center-header rv">
-                <span class="subtitle">Graphic design</span>
-                <h2 class="glow-heading">Posters & visual assets</h2>
-
-                <!-- NEW PARAGRAPH ADDED HERE -->
-                <p style="margin-bottom: 8px;">I create stunning graphic designs tailored to your specific needs.</p>
-                <p style="font-size: 16px; color: var(--muted);">From business cards, wedding and graduation invitations, to event posters and promotional ads. I design professional visuals that perfectly suit your brand and message.</p>
-
-            </div>
-
-            <div class="poster-grid rv">
-                <div class="poster-item" onclick="openLightbox('./images/B1.png')">
-                    <img src="./images/B1.png" alt="Poster 1">
-                    <div class="poster-overlay">View design ↗</div>
-                </div>
-                <div class="poster-item" onclick="openLightbox('./images/B2.png')">
-                    <img src="./images/B2.png" alt="Poster 2">
-                    <div class="poster-overlay">View design ↗</div>
-                </div>
-                <div class="poster-item" onclick="openLightbox('./images/B3.png')">
-                    <img src="./images/B3.png" alt="Poster 3">
-                    <div class="poster-overlay">View design ↗</div>
-                </div>
-                <div class="poster-item" onclick="openLightbox('./images/B4.png')">
-                    <img src="./images/B4.png" alt="Poster 4">
-                    <div class="poster-overlay">View design ↗</div>
-                </div>
-                <div class="poster-item" onclick="openLightbox('./images/B5.png')">
-                    <img src="./images/B5.png" alt="Poster 5">
-                    <div class="poster-overlay">View design ↗</div>
-                </div>
-                <div class="poster-item" onclick="openLightbox('./images/B6.png')">
-                    <img src="./images/B6.png" alt="Poster 6">
-                    <div class="poster-overlay">View design ↗</div>
-                </div>
-            </div>
-        </div>
+    <section class="section about-section" id="about">
+      <div class="wrap about-layout">
+        <div class="about-photo reveal"><img src="./images/rein no.png" alt="Portrait of Reinhard" loading="lazy"><div class="photo-caption"><b>Reinhard Chemonges</b><span>Freelance Developer & Designer</span></div></div>
+        <div class="about-copy reveal"><span class="section-kicker">A LITTLE ABOUT ME</span><h2>Technology should make work easier.</h2><p>I'm Reinhard, a developer and creative problem-solver based in Kenya. I enjoy turning business ideas and everyday challenges into useful digital experiences.</p><p>My work brings together web development, practical business systems and visual design. I also teach coding, which has strengthened the way I explain technical ideas in a simple, approachable way.</p><p>Whether you are starting a business, improving an existing process or taking your products online, let's discuss a solution that fits your goals.</p><div class="about-actions"><a class="text-link" href="https://github.com/reinchemo" target="_blank" rel="noopener">GitHub profile ↗</a><a class="text-link" href="https://www.linkedin.com/in/reinhard-chemonges-15a52a216/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div>
+      </div>
     </section>
 
-    <!-- Power Point Designs Section -->
-    <section id="pdfs" class="cr">
-        <div class="wrap">
-            <div class="center-header rv">
-                <span class="subtitle">Documents</span>
-                <h2 class="glow-heading">Power Point Designs</h2>
-                <p>Explore my professional document and layout designs.</p>
-            </div>
-
-            <div class="pdf-grid rv">
-                <!-- PDF 1 -->
-                <a href="./pdfs/comp.pdf" target="_blank" class="pdf-card">
-                    <div class="pdf-visual">
-                        <div class="pdf-icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                        </div>
-                        <span class="pdf-type">PDF</span>
-                    </div>
-                    <div class="pdf-info">
-                        <h3>Computer & Coding Presentation</h3>
-                        <p>Click to view the full document</p>
-                        <span class="pdf-btn">Open Document ↗</span>
-                    </div>
-                </a>
-
-                <!-- PDF 2 -->
-                <a href="./pdfs/Finance.pdf" target="_blank" class="pdf-card">
-                    <div class="pdf-visual">
-                        <div class="pdf-icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                        </div>
-                        <span class="pdf-type">PDF</span>
-                    </div>
-                    <div class="pdf-info">
-                        <h3>Annual Report Presentation</h3>
-                        <p>Click to view the full document</p>
-                        <span class="pdf-btn">Open Document ↗</span>
-                    </div>
-                </a>
-            </div>
-        </div>
+    <section class="section skills-section" id="skills">
+      <div class="wrap skills-layout">
+        <div class="reveal"><span class="section-kicker">TOOLS & CAPABILITIES</span><h2>Skills behind the work.</h2><p class="muted-copy">I choose tools based on the needs and scale of each project, with an emphasis on usable interfaces and maintainable solutions.</p></div>
+        <div class="skill-cloud reveal"><span>HTML & CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Node.js</span><span>Supabase</span><span>WordPress</span><span>Canva</span><span>Figma</span><span>Responsive UI</span><span>Database design</span><span>Business dashboards</span></div>
+      </div>
     </section>
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <span class="close-btn">&times;</span>
-        <img id="lightbox-img" src="" alt="Full Poster">
-    </div>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-glow"></div>
-        <div class="wrap footer-content">
-            <div class="footer-cta rv">
-                <h2>Ready to take your brand online?</h2>
-                <p>Book your first project now and get 10% off. Tell me what you need and I’ll reply with a plan.</p>
-                <!-- UPDATED TO WHATSAPP -->
-                <a class="btn p glow-btn" href="https://wa.me/254759592457" target="_blank">Book a project now</a>
-            </div>
-            <div class="footer-links">
-                <div class="f-col">
-                    <h4>Reinhard.</h4>
-                    <p class="justified-text-footer">Building digital systems that grow businesses. Modern, fast and reliable.</p>
-                </div>
-                <div class="f-col">
-                    <h4>Navigate</h4>
-                    <a href="#about">About</a>
-                    <a href="#systems">Systems</a>
-                    <a href="#teach">Teaching</a>
-                    <a href="#posters">Posters</a>
-                </div>
-                <div class="f-col">
-                    <h4>Connect</h4>
-                    <a href="https://github.com/reinchemo">GitHub</a>
-                    <a href="https://www.linkedin.com/in/reinhard-chemonges-15a52a216/">LinkedIn</a>
-                    <a href="tel:+254759592457">+254 759 592 457</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Reinhard. All rights reserved.</p>
-            </div>
+    <section class="section creative-section" id="creative">
+      <div class="wrap">
+        <div class="section-heading reveal"><div><span class="section-kicker">CREATIVE WORK</span><h2>Design that gets noticed.</h2></div><p>Promotional artwork, invitations and visual materials for businesses, events and individuals.</p></div>
+        <div class="poster-grid reveal">
+          <button class="poster-item" type="button" data-image="./images/B1.png" aria-label="View design 1"><img src="./images/B1.png" alt="Graphic design sample one" loading="lazy"><span>View design ↗</span></button>
+          <button class="poster-item" type="button" data-image="./images/B2.png" aria-label="View design 2"><img src="./images/B2.png" alt="Graphic design sample two" loading="lazy"><span>View design ↗</span></button>
+          <button class="poster-item" type="button" data-image="./images/B3.png" aria-label="View design 3"><img src="./images/B3.png" alt="Graphic design sample three" loading="lazy"><span>View design ↗</span></button>
+          <button class="poster-item" type="button" data-image="./images/B4.png" aria-label="View design 4"><img src="./images/B4.png" alt="Graphic design sample four" loading="lazy"><span>View design ↗</span></button>
+          <button class="poster-item" type="button" data-image="./images/B5.png" aria-label="View design 5"><img src="./images/B5.png" alt="Graphic design sample five" loading="lazy"><span>View design ↗</span></button>
+          <button class="poster-item" type="button" data-image="./images/B6.png" aria-label="View design 6"><img src="./images/B6.png" alt="Graphic design sample six" loading="lazy"><span>View design ↗</span></button>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- UPDATED TO WHATSAPP -->
-    <a href="https://wa.me/254759592457" class="whatsapp-float" target="_blank" rel="noopener">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-        <span>WhatsApp me</span>
-    </a>
+    <section class="section teaching-section" id="teaching">
+      <div class="wrap teaching-layout reveal"><div><span class="section-kicker">ALSO OFFERED</span><h2>Learn to code with confidence.</h2><p>I offer beginner-friendly coding lessons for children and young learners, making programming concepts easier to understand through practical activities.</p><a class="text-link" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%27d%20like%20to%20ask%20about%20coding%20lessons." target="_blank" rel="noopener">Ask about coding lessons ↗</a></div><div class="teaching-video"><video controls playsinline preload="metadata" poster="./images/rein no.png"><source src="./videos/Video2.mp4" type="video/mp4">Your browser does not support video playback.</video><small>A short look at my teaching work</small></div></div>
+    </section>
 
-    <script src="script.js" defer></script>
+    <section class="contact-section" id="contact">
+      <div class="contact-glow"></div><div class="wrap contact-inner reveal"><span class="section-kicker">HAVE A PROJECT IN MIND?</span><h2>Let's talk about what<br><em>you want to build.</em></h2><p>Tell me a little about your idea. We'll discuss the best way to bring it to life, with a clear scope and quotation before work begins.</p><div class="contact-actions"><a class="button button-light" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%20have%20a%20project%20I%27d%20like%20to%20discuss." target="_blank" rel="noopener">Start a WhatsApp conversation ↗</a><a class="contact-phone" href="tel:+254759592457">Call: +254 759 592 457</a></div><div class="contact-footnote">No pressure — just a conversation about your project.</div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-main"><div><a class="brand footer-brand" href="#home"><span class="brand-mark">R</span><span>REINOVATE<small>by Reinhard</small></span></a><p>Thoughtful websites and digital solutions for businesses ready to grow.</p></div><div class="footer-col"><b>Explore</b><a href="#services">Services</a><a href="#work">My work</a><a href="#process">How it works</a><a href="#about">About me</a></div><div class="footer-col"><b>Connect</b><a href="https://wa.me/254759592457" target="_blank" rel="noopener">WhatsApp</a><a href="https://github.com/reinchemo" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/reinhard-chemonges-15a52a216/" target="_blank" rel="noopener">LinkedIn</a></div></div>
+    <div class="wrap footer-bottom"><span>© <span id="year"></span> Reinhard · Reinovate. All rights reserved.</span><span>Designed with purpose in Kenya.</span></div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/254759592457?text=Hello%20Reinhard%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Reinhard on WhatsApp"><span>✆</span> Let's talk</a>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Graphic design preview"><button class="lightbox-close" type="button" aria-label="Close preview">×</button><img id="lightboxImage" src="" alt="Expanded graphic design"></div>
+  <script src="script.js" defer></script>
 </body>
-
 </html>

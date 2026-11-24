@@ -124,3 +124,11 @@ body{font-size:18px;line-height:1.8}
  .hero-video-top strong{font-size:12px}
  .hero-video-top .live-label{font-size:9px;padding:5px 7px}
 }
+
+
+/* Direct links to professional profiles in the contact section */
+.contact-socials{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px}
+.contact-socials a{display:inline-flex;align-items:center;gap:9px;padding:12px 17px;border:1px solid rgba(255,255,255,.22);border-radius:10px;color:#e5eefb;font-size:15px;font-weight:800;transition:background .2s,border-color .2s,transform .2s}
+.contact-socials a:hover{background:rgba(255,255,255,.09);border-color:rgba(112,169,255,.8);transform:translateY(-2px)}
+.contact-socials a span{display:grid;place-items:center;min-width:22px;height:22px;border-radius:6px;background:rgba(112,169,255,.2);color:#8db8ff;font-size:14px;font-weight:900}
+@media(max-width:760px){.contact-socials{gap:10px}.contact-socials a{font-size:14px;padding:11px 13px}}
